@@ -69,7 +69,7 @@ function UserRow({ user }: IUser) {
           <Collapse in={open} timeout="auto" unmountOnExit>
             <Box sx={{ margin: 1 }}>
               <Table size="small">
-                <GetUserPosts idUser={user.id} />
+                <GetUserPosts key={user.id} idUser={user.id} />
               </Table>
             </Box>
           </Collapse>
